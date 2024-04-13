@@ -1,0 +1,786 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+  background-color: #fec77e;
+}
+
+.table {
+  padding: 0rem;
+  background-color: #ece9e9;
+}
+
+#header {
+  background-color: #fec77e;
+  height: 100px;
+  border-bottom: 1px solid black;
+}
+
+.links {
+  align-items: center;
+  display: flex;
+}
+
+.links a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header__row {
+  display: flex;
+}
+
+.header__logo h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  color: #cc2a41;
+}
+
+.header__btn {
+  align-items: center;
+  display: flex;
+}
+
+.header__btn button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #cc2a41;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header__btn button a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ece9e9;
+  text-decoration: none;
+}
+
+#ice {
+  background-color: #fec77e;
+  position: relative;
+}
+
+.ice-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 170px;
+  line-height: 202px;
+  text-align: center;
+  color: #cc2a41;
+  margin: 0;
+}
+
+.ice-des {
+  position: absolute;
+  top: 65%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+  text-align: center;
+  color: #bd571b;
+}
+
+.slider_btn-left,
+.slider_btn-right {
+  border: none;
+  background: transparent;
+}
+
+.ice_slider_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_item img {
+  width: 250px;
+}
+
+#ice_slider {
+  width: 100%;
+  background-color: #fec77e;
+  padding: 30px 0;
+}
+
+#ice_slider button img {
+  width: 70px;
+}
+
+#brands {
+  width: 100%;
+  background-color: #fec77e;
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.brands_title h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 48px;
+  text-align: center;
+  color: #cc2a41;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+.brands_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  animation: infinite-scroll 40s linear infinite;
+  gap: 100px;
+}
+
+.td-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: #cc2a41;
+  margin: 80px 150px 0 150px;
+}
+
+.td-des {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0 150px 80px 150px;
+}
+
+.td-img {
+  width: 100%;
+}
+
+#icecream {
+  background-color: #cc2a41;
+  height: 700px;
+  position: relative;
+}
+
+.icecream-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 168px;
+  text-align: center;
+  color: #ece9e9;
+  width: 80%;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+.icecream_bgtext-row p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  color: #ece9e9;
+}
+
+.icecream-bg {
+  position: absolute;
+  top: 0;
+}
+
+.icecream-bg img {
+  width: 100%;
+}
+
+#milkshake {
+  position: relative;
+}
+
+.milkshake-bg img {
+  width: 100%;
+}
+
+.milkshake-row {
+  position: absolute;
+  top: 0;
+}
+
+.milkshake-row {
+  width: 100%;
+  padding: 50px 0;
+  background: rgba(236, 233, 233, 0.77);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.milkshake-title span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  text-align: center;
+  color: #cc2a41;
+}
+
+.milkshake-title h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 86px;
+  text-align: center;
+  color: #000000;
+}
+
+.milkshake-title p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.milkshake-des h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #cc2a41;
+}
+
+.milkshake-des {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#cater {
+  background-color: #fec77e;
+  position: relative;
+  height: 900px;
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cater img {
+  width: 100%;
+}
+
+#cater .container {
+  padding: 120px 0;
+  width: 100%;
+}
+
+.cater-img img {
+  width: 100%;
+}
+
+.cater-title h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 90px;
+  color: #cc2a41;
+}
+
+.cater-des {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #cc2a41;
+}
+
+#carousel {
+  background-color: #cc2a41;
+  position: relative;
+  height: 650px;
+}
+
+.carousel-title h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 168px;
+  text-align: center;
+  color: #ece9e9;
+}
+
+.carousel-title p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #ece9e9;
+}
+
+footer {
+  background-color: #fec77e;
+  height: 765px;
+  width: 100%;
+  padding: 80px 0;
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .container {
+  position: relative;
+}
+
+.footer-title h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 134px;
+  text-align: center;
+  color: #cc2a41;
+}
+
+footer .img-bg {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.footer-city img {
+  width: 20%;
+}
+
+.footer-city {
+  text-align: center;
+}
+
+.footer-city h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 114px;
+  text-align: center;
+  color: #cc2a41;
+}
+
+.footer-city a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  color: #cc2a41;
+  text-decoration: none;
+}
+
+.footer-city p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.footer-end a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.footer-end {
+  text-align: center;
+}
+
+.city-a {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+footer hr {
+  background: rgba(99, 43, 11, 0.63);
+}
+.carousel-inner {
+  padding: 1em;
+  margin: 50px 0;
+}
+.carousel-item {
+  text-align: center;
+}
+.carousel-item img {
+  width: 300px;
+}
+.carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 45%;
+}
+.carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 45%;
+}
+
+@media screen and (max-width: 1350px) {
+  .info-img {
+    display: none;
+  }
+  .icecream-title {
+    font-size: 80px;
+    line-height: 80px;
+    padding: 100px 0;
+  }
+  #icecream {
+    height: 500px;
+  }
+  .icecream-bg img {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slider_item img {
+    width: 200px;
+  }
+  .cater-title h1 {
+    font-size: 80px;
+  }
+  #cater img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slider_item img {
+    width: 150px;
+  }
+  #ice_slider button img {
+    width: 50px;
+  }
+  .ice-title {
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .ice-des {
+    display: none;
+  }
+  .cater-title h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  #cater {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #cater .container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    max-width: 1000px;
+  }
+  #cater {
+    height: 900px;
+  }
+  .cater-text {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cater-img {
+    margin: 0 auto;
+  }
+  .cater-title h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    /* padding-left: var(--bs-gutter-x,.75rem); */
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #cater {
+    background-image: none;
+  }
+  footer {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slider_item img {
+    width: 100px;
+  }
+  #ice_slider button img {
+    width: 30px;
+  }
+  .ice-title {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .header__logo h1 {
+    font-size: 25px;
+  }
+  .header__btn button {
+    height: 30px;
+  }
+  .milkshake-title h1 {
+    font-size: 40px;
+  }
+  .milkshake-title p {
+    line-height: 25px;
+  }
+  .carousel-title h4 {
+    font-size: 40px;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    /* padding-left: var(--bs-gutter-x,.75rem); */
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-city h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .footer-title h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider_item img {
+    width: 80px;
+  }
+  .ice-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .ice-des {
+    display: none;
+  }
+  .brands_row img {
+    height: 40px;
+  }
+  #brands {
+    padding: 20px;
+  }
+  .icecream-title {
+    font-size: 50px;
+    line-height: 50px;
+    padding: 50px 0;
+  }
+  .icecream-bg img {
+    margin: 30px 0;
+  }
+  #icecream {
+    height: 300px;
+  }
+  .carousel-item img {
+    width: 200px;
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    /* padding-left: var(--bs-gutter-x,.75rem); */
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #ice_slider button img {
+    width: 25px;
+  }
+  .brands_row {
+    gap: 70px;
+  }
+  .milkshake-title h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .milkshake-title p {
+    font-size: 20px;
+  }
+  .milkshake-title span {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .footer-city h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .footer-city a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo h1 {
+    font-size: 20px;
+  }
+  .links a {
+    font-size: 15px;
+  }
+  .header__btn button {
+    width: 80px;
+  }
+  .td-des {
+    margin: 0 60px 80px 60px;
+  }
+  .td-title {
+    font-size: 25px;
+    margin: 80px 60px 0 60px;
+  }
+  .milkshake-row {
+    flex-direction: column;
+  }
+  .milkshake-des {
+    margin: 0 auto;
+  }
+  #milkshake {
+    height: 300px;
+  }
+  .cater-des {
+    font-size: 18px;
+  }
+  .cater-title h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .footer_row {
+    flex-direction: column;
+  }
+  .footer-city img {
+    width: 50px;
+  }
+  .footer-city {
+    margin: 30px 0;
+  }
+  footer {
+    height: 900px;
+  }
+  .footer-title h1 {
+    font-size: 50px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .find {
+    display: none;
+  }
+  .slider_item:nth-child(3) {
+    display: none;
+  }
+  .brands_row {
+    gap: 50px;
+  }
+  .icecream-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .milkshake-title p {
+    font-size: 16px;
+  }
+  .carousel-title h4 {
+    font-size: 30px;
+    line-height: 100px;
+  }
+  .carousel-item img {
+    width: 120px;
+  }
+  #carousel {
+    height: 400px;
+  }
+  .carousel-indicators {
+    display: none;
+    height: 0;
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .header__btn button {
+    display: none;
+  }
+  .ice-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .slider_item:nth-child(2) {
+    display: none;
+  }
+  .brands_row {
+    gap: 30px;
+  }
+  .footer-title h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .header__logo h1 {
+    font-size: 17px;
+  }
+  .slider_item img {
+    width: 60px;
+  }
+}
